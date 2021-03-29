@@ -45,7 +45,7 @@ def calculate_jaccard_similarity(x):
     u = list(b1 | b2)
     j_similarity = float(len(i))/float(len(u))
 
-    return (x[0], x[1], j_similarity)
+    return x[0], x[1], j_similarity
 
 
 conf = SparkConf().setAppName("HW3-Task1")
